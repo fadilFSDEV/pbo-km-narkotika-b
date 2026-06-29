@@ -19,7 +19,7 @@ Proyek ini adalah Knowledge Management System (KMS) untuk mengelola putusan peng
    ```
 
 ## Video Demo Aplikasi
-[Tautan Video Youtube] (Masukkan link video demo di sini)
+[Tautan Video Youtube]
 
 ## Anggota Kelompok
 - Muhammad Habib Fadillah - 202510370110034 - Kelas B (Peran: Knowledge/Database Engineer - Branch: feature/model)
