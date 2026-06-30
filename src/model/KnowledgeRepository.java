@@ -2,6 +2,11 @@ package model;
 
 import java.util.ArrayList;
 
+/**
+ * Class KnowledgeRepository berfungsi sebagai database berbasis memori (ArrayList)
+ * untuk menyimpan, mencari, memfilter, dan mengelola semua objek Putusan.
+ */
+
 public class KnowledgeRepository {
     private ArrayList<Putusan> daftarPutusan;
 
