@@ -1,5 +1,11 @@
 package model;
 
+/**
+ * Class Putusan merepresentasikan satu entitas data putusan pengadilan narkotika.
+ * Class ini menyimpan semua detail terkait sebuah kasus, mulai dari data terdakwa
+ * hingga vonis yang dijatuhkan.
+ */
+
 public class Putusan extends KasusHukum implements IKasus {
     private String jenisNarkotika;
     private double beratBarangBukti;
