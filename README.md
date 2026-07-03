@@ -17,6 +17,28 @@ Proyek ini adalah Knowledge Management System (KMS) untuk mengelola putusan peng
    ```bash
    java app.Main
    ```
+   ### Cara 2: Melalui IntelliJ IDEA (Lokal)
+
+
+1.  *Clone Repository ke Komputer Anda*
+    Buka terminal dan jalankan perintah berikut:
+    bash
+    git clone https://github.com/fadilFSDEV/pbo-km-narkotika-b.git
+
+
+2.  *Buka Proyek di IntelliJ IDEA*
+   - Buka IntelliJ IDEA.
+   - Pilih *File > Open...*
+   - Arahkan dan pilih folder pbo-km-narkotika-b yang baru saja Anda clone, lalu klik *OK*.
+   - IntelliJ IDEA akan secara otomatis mendeteksi struktur proyek.
+
+3.  *Jalankan Aplikasi*
+   - Di panel Project di sebelah kiri, navigasi ke src > app > Main.java.
+   - Klik kanan pada file Main.java.
+   - Pilih *Run 'Main.main()'*.
+   - Aplikasi akan dikompilasi dan dijalankan, dengan output yang muncul di konsol Run di bagian bawah IDE.
+
+---
 
 ## Video Demo Aplikasi
 [Tautan Video Youtube]
