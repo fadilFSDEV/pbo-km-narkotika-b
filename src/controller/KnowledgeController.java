@@ -92,6 +92,25 @@ public class KnowledgeController {
     }
 
     /**
+     * Memfilter putusan berdasarkan nama pengadilan.
+     * @param pengadilan Nama pengadilan yang dicari.
+     * @return ArrayList Putusan yang cocok.
+     */
+    public ArrayList<Putusan> filterByPengadilan(String pengadilan) {
+        return repository.filterByPengadilan(pengadilan);
+    }
+
+    /**
+     * Memfilter putusan berdasarkan rentang vonis.
+     * @param minBulan Vonis minimal dalam bulan.
+     * @param maxBulan Vonis maksimal dalam bulan.
+     * @return ArrayList Putusan yang cocok.
+     */
+    public ArrayList<Putusan> filterByRentangVonis(int minBulan, int maxBulan) {
+        return repository.filterByRentangVonis(minBulan, maxBulan);
+    }
+
+    /**
      * Mengambil semua data putusan dari repository.
      * @return ArrayList berisi semua Putusan.
      */

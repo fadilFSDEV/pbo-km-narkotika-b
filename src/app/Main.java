@@ -78,7 +78,9 @@ public class Main {
         System.out.println("1. Cari berdasarkan Nomor Perkara");
         System.out.println("2. Cari berdasarkan Nama Terdakwa");
         System.out.println("3. Filter berdasarkan Jenis Narkotika");
-        int pilihan = InputHandler.validasiPilihan("Pilih mode: ", 1, 3, scanner);
+        System.out.println("4. Filter berdasarkan Pengadilan");
+        System.out.println("5. Filter berdasarkan Rentang Vonis (bulan)");
+        int pilihan = InputHandler.validasiPilihan("Pilih mode: ", 1, 5, scanner);
 
         ArrayList<Putusan> hasil;
         switch (pilihan) {
@@ -95,6 +97,17 @@ public class Main {
             case 3:
                 String jenis = InputHandler.validasiString("Masukkan jenis narkotika (e.g., Sabu-sabu, Ganja): ", scanner);
                 hasil = controller.filterByJenisNarkotika(jenis);
+                view.tampilkanDaftarPutusan(hasil);
+                break;
+            case 4:
+                String pengadilan = InputHandler.validasiString("Masukkan nama pengadilan (e.g., PN Surabaya): ", scanner);
+                hasil = controller.filterByPengadilan(pengadilan);
+                view.tampilkanDaftarPutusan(hasil);
+                break;
+            case 5:
+                int min = InputHandler.validasiInt("Masukkan vonis minimal (bulan): ", scanner);
+                int max = InputHandler.validasiInt("Masukkan vonis maksimal (bulan): ", scanner);
+                hasil = controller.filterByRentangVonis(min, max);
                 view.tampilkanDaftarPutusan(hasil);
                 break;
         }
